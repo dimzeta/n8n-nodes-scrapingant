@@ -6,7 +6,7 @@ export class ScrapingAnt implements INodeType {
 		// Basic node details will go here
 		displayName: 'ScrapingAnt',
 		name: 'scrapingAnt',
-		icon: 'file:scrapingant.png',
+		icon: 'file:scrapingant.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -14,11 +14,13 @@ export class ScrapingAnt implements INodeType {
 		defaults: {
 			name: 'ScrapingAnt',
 		},
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-inputs-wrong-regular-node
 		inputs: [NodeConnectionType.Main],
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
 		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
-				name: 'ScrapingAntApi',
+				name: 'scrapingAntApi',
 				required: true,
 			},
 		],

@@ -6,7 +6,7 @@ import {
 } from 'n8n-workflow';
 
 export class ScrapingAntApi implements ICredentialType {
-	name = 'ScrapingAntApi';
+	name = 'scrapingAntApi';
 	displayName = 'ScrapingAnt API';
 	// Uses the link to this tutorial as an example
 	// Replace with your own docs links when building your own nodes
